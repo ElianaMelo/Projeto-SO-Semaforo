@@ -1,19 +1,19 @@
-import java.awt.Color;
+
 
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Principal extends JFrame {
+public class Prototipo extends JFrame {
+	
 	private static final long serialVersionUID = 1L;
 	private JPanel painel;
 	
-	public Principal() {
+	public Prototipo() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(350, 5, 700, 720);
+		setBounds(350, 5, 890, 720);
 		setResizable(false);
 
 		painel = new JPanel();
@@ -31,19 +31,29 @@ public class Principal extends JFrame {
 		//btnInicio.setBounds(160, 350, 410, 67);
 		//btnInicio.setBackground(Color.white);
 
-		JLabel nomeBotao = new JLabel();
-		nomeBotao.setIcon(new ImageIcon("img/start.png"));
+		JLabel steraParteUm = new JLabel();
+		steraParteUm.setIcon(new ImageIcon("img/ParteUm.png"));
+		steraParteUm.setBounds(20, 350, 410, 250);
+		
+		JLabel steraParteTres = new JLabel();
+		steraParteTres.setIcon(new ImageIcon("img/ParteTres.png"));
+		steraParteTres.setBounds(590, 350, 410, 250);
 
-		//btnInicio.add(nomeBotao);
+		JLabel steraParteDois = new JLabel();
+		steraParteDois.setIcon(new ImageIcon("img/ParteDois.png"));
+		steraParteDois.setBounds(300, 280, 700, 370);
+		
 
-		//painel.add(btnInicio);
+		painel.add(steraParteUm);
+		painel.add(steraParteDois);
+		painel.add(steraParteTres);
 		painel.add(fundoInicio);
 		
 		this.setVisible(true);
 	}
-	
-	public static void main(String[] args) {
-		Principal principal = new Principal(); 
-	}
 
+	public static void main(String[] args) {
+		Prototipo prototipo = new Prototipo();
+	}
+	
 }
