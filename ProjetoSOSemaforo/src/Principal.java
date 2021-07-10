@@ -56,7 +56,7 @@ public class Principal extends JFrame {
 		
 		JLabel caixaDois = new JLabel();
 		caixaDois.setIcon(new ImageIcon("img/caixaDois.png"));
-		caixaDois.setBounds(180, 329, 76, 55);
+		caixaDois.setBounds(175, 329, 76, 55);
 		
 		JLabel portaUmVerde = new JLabel();
 		portaUmVerde.setIcon(new ImageIcon("img/portaUmVerde.png"));
