@@ -17,7 +17,7 @@ public class Principal extends JFrame {
 	public Principal() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(350, 5, 700, 720);
+		setBounds(350, 5, 850, 700);
 		setResizable(false);
 
 		painel = new JPanel();
