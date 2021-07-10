@@ -35,7 +35,7 @@ public class Principal extends JFrame {
 		//fundoInicio.setIcon(new ImageIcon("img/fundo_inicio.png"));
 
 		JButton btnInicio = new JButton("Iniciar");
-		btnInicio.setBounds(100, 100, 410, 67);
+		btnInicio.setBounds(320, 600, 250, 50);
 		//btnInicio.setBackground(Color.white);
 
 		JLabel steraParteUm = new JLabel();
@@ -89,7 +89,7 @@ public class Principal extends JFrame {
 		
 		this.setVisible(true);
 		
-		ControleCaixa cc = new ControleCaixa(caixaUm, caixaDois, portaUmVerde, portaUmVermelho, portaDoisVerde, portaDoisVermelho);
+		ControleCaixa cc = new ControleCaixa(caixaUm, caixaDois, portaUmVerde, portaUmVermelho, portaDoisVerde, portaDoisVermelho,btnInicio);
 
 		btnInicio.addActionListener(cc);
 		
