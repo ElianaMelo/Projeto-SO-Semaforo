@@ -72,13 +72,13 @@ public class Principal extends JFrame {
 		portaDoisVermelho.setIcon(new ImageIcon("img/portaDoisVermelha.png"));
 		portaDoisVermelho.setBounds(548, 330, 12, 69);
 
-		JLabel legenda1 = new JLabel("UP");
-		legenda1.setBounds(280, 250, 80, 80);
+		JLabel legenda1 = new JLabel("DOWN");
+		legenda1.setBounds(240, 250, 80, 80);
 		legenda1.setFont(new Font("Verdana", Font.BOLD, 20));
-
-		JLabel legenda2 = new JLabel("DOWN");
+		
+		JLabel legenda2 = new JLabel("UP");
 		legenda2.setBounds(590, 250, 80, 80);
-		legenda2.setFont(new Font("Verdana", Font.BOLD, 20));
+		legenda2.setFont(new Font("Verdana", Font.BOLD, 20));		
 
 		JButton btnInicio = new JButton("Iniciar");
 		btnInicio.setBounds(380, 600, 140, 40);

@@ -42,7 +42,11 @@ public class ThreadSemaforo extends Thread {
 	public void executa() {
 		try {
 			System.out.println("metodo executa, semaforo.acquire aux " + aux);
+			// Método que refere-se ao UP do mecanismo semáforo representado
+			// por uma variável de valor +1, na qual indica um processo que está
+			//sendo executado naquele instante. 
 			semaforo.acquire();
+			
 			acionaCaixa();
 
 		} catch (InterruptedException e) {
@@ -50,6 +54,12 @@ public class ThreadSemaforo extends Thread {
 
 		} finally {
 			semaforo.release();
+			/** Método que refere-se ao DOWN do mecanismo semáforo representado
+				por uma variável de valor -1, na qual indica um processo que está
+				sendo executado naquele instante. 
+			 	Resumindo, tando o acquire como o release tem a função de controlar
+			 	as execuções ou acesso dos processos para que não ocorram ao mesmo tempo.
+			 */
 		}
 		aux++;
 		System.out.println("metodo executa, aux " + aux);
